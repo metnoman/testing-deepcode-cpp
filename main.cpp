@@ -10,7 +10,8 @@ private:
 };
 
 int main (int argc, char *argv[]) { 
-    int *var = new int(12);
-    delete var;
+    if(int *var = new int(12); var) {
+        delete var;
+    }
     return 0;
  }
