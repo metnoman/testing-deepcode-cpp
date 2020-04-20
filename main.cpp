@@ -13,5 +13,7 @@ int main (int argc, char *argv[]) {
     if(int *var = new int(12); var) {
         delete var;
     }
-    return 0;
+    MyInt myint;
+
+    return myint.value();
  }
