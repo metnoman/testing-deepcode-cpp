@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 class MyInt {
 public:
@@ -13,7 +14,9 @@ int main (int argc, char *argv[]) {
     if(int *var = new int(12); var) {
         delete var;
     }
-    MyInt myint;
 
+    std::vector<MyInt> myints;
+
+    MyInt myint;
     return myint.value();
  }
